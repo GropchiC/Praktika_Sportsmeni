@@ -1,0 +1,53 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="420"
+        Height="620"
+        WindowStartupLocation="CenterScreen"
+        x:Class="Sportik.addoredit"
+        Title="Добавление/Редактирование">
+        <Grid>
+                <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Margin = "90 10 0 0" FontSize = "20" FontWeight="Bold"> Регистрация</TextBlock>
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin = "0 25 0 0">id: </TextBlock>
+                                <TextBox Name="id" x:CompileBindings="False" Text="{Binding id}" Width="200" Height="5" Margin = "10 0 0 0" Watermark="ID"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin = "0 25 0 0">ФИО: </TextBlock>
+                                <TextBox Name="ФИО" x:CompileBindings="False" Text="{Binding ФИО}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Введите ФИО"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin = "0 25 0 0">Возраст: </TextBlock>
+                                <TextBox Name="Возраст" x:CompileBindings="False" Text="{Binding Возраст}" Width="200" Height="5" Margin = "90 0 0 0" Watermark="Введите Возраст"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin = "0 25 0 0">Пол: </TextBlock>
+                                <TextBox Name="Пол" x:CompileBindings="False" Text="{Binding Пол}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Укажите пол"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin = "0 25 0 0">Вид_спорт: </TextBlock>
+                                <TextBox Name="Вид_спорт" x:CompileBindings="False" Text="{Binding Наименование_спорта}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Укажите Вид_спорт"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin = "0 25 0 0">Спортивный_Раз: </TextBlock>
+                                <TextBox Name="Спортивный_Раз" x:CompileBindings="False" Text="{Binding Разряд}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Укажите Спортивный_Разряд"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin = "0 25 0 0">Команда: </TextBlock>
+                                <TextBox Name="Команда" x:CompileBindings="False" Text="{Binding Название_команды}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Укажите Команду"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin = "0 25 0 0">Тренер: </TextBlock>
+                                <TextBox Name="Тренер" x:CompileBindings="False" Text="{Binding ФИОТ}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Укажите Тренера"></TextBox>
+                        </StackPanel>
+            
+                        <StackPanel Orientation="Horizontal">
+                                <Button Name="Save" Content="Сохранить" Click="Save_OnClick"  Margin = "0 15 0 20"></Button>
+                                <Button Name="Back" Content="Назад" Click="GoBack"  Margin = "165 15 0 20"></Button>
+                        </StackPanel>
+                </UniformGrid>
+        </Grid>
+</Window>

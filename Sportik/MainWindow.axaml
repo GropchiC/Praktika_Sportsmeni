@@ -1,0 +1,34 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="310"
+        x:Class="Sportik.MainWindow"
+        Width="400"
+        Height="310"
+        WindowStartupLocation="CenterScreen"
+        Title="Sportik">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Margin = "10 10 0 0" FontSize = "20" FontWeight="Bold"> Выбор таблицы для просмотра</TextBlock>
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                    <Button Name="sport" Content="Спортсмены" Click="Sportiki"></Button>
+                    <TextBlock Margin = "10 10 10 10"> - данные о спортсменах </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                    <Button Name="order" Content="Тренера"></Button>
+                    <TextBlock Margin = "10 10 10 10"> - данные о тренерах </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                    <Button Name="full_orders" Content="Соревнования"> </Button>
+                    <TextBlock Margin = "10 10 10 10"> - данные о соревнованиях  </TextBlock>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal" Margin="10 100 0 0">
+                    <Button Name="exit" Content="Выход" Click="Exit_OnClick"></Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

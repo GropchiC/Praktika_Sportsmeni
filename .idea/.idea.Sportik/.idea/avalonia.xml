@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Sportik/App.axaml" value="Sportik/Sportik.csproj" />
+        <entry key="Sportik/MainWindow.axaml" value="Sportik/Sportik.csproj" />
+        <entry key="Sportik/Sportiki.axaml" value="Sportik/Sportik.csproj" />
+        <entry key="Sportik/addoredit.axaml" value="Sportik/Sportik.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
